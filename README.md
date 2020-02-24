@@ -1,73 +1,5 @@
 # Tech Talks Summary
 
-# Already viewed
-### [Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE) [00:35:52] by **Sandi Metz** (2015)
-How to program without using if?
-Explica como utilizar el patron strategy para obtener
-combinaciones de House con distintos formatos y distintos sort_algorithms
-Que con herencia estamos limitados para obtener esto.
-Para explicar utiliza la comparacion del metodo en diferentes branches.
-Ahi se da cuenta de que lo que varia es el orden.
-Entonces contruye 2 estrategias de ordenamiento, la que no hace nada DefaultOrder y la otra RandomOrder
-La estrategia es identificar que es lo que se hace distinto en cada branch del condicional, darle 
-un nombre y crear 2 objetos que tomen la responsabilidad de ese comportamiento.
-
-
-### [Confident Code](https://www.youtube.com/watch?v=T8J0j2xJFgQ) [00:31:24] by **Avdi Grimm** (2012)
-Every method does:
-1-Gather Input
-2-Perform Work
-3-Deliver Result
-4-Handling Errors
-
------------------------
-
-1-Gather Input
-  * Duck typing is treat the object as a duck, assumes that if is not it will complaint
-  * The opposite of dick typing is switch statement smell
-  * How can my method trust that input objects(or data) allways respond to the interface I need?
-
-  If you find yourself doing these __over the input__:
-    * Switch over a type of an object
-    * Checking for method existence
-    * Check for nil
-  Then you can:
-  __Coerce Input__
-    * __validate type preconditions__ by calling `.to_s`, `.to_i`, `Array()` on the types that you expect.
-
-__Decorate Input__
-    * Enclose the switch over the object and introduce special case object,
-       making sure that for all cases conforms to the same interface
-
-__Reject invalid Input__
-  * If you cannot wrap the input with a switch for special cases, then validate preconditions.
-  * ( raise error | return do-nothing) if precondition not met
-
-__Do nothing with NullObject__
-  * return a NullObject which means do-nothing
-  * The NullObject returns self for all method calls
-  * A useful constructor for NullObject is Maybe() method
-
-__Use default values__
-  * Another way of handling nil cases is defining a defalut value
-
-2-Perform Work
-* JQuery Style
-* Chaining over an arryfied result
-* This avoid error handling by doing-nothing when some step in the chain returns empty
-
-3-Deliver Result
-* Don't return nil
-* Return special-case or null-object
-* Or raise an error
-
-4-Handling Errors
-* Isolate error handling with a bouncer method(raise error or do-nothing)
-* Use checked_xxxx methods where xxxx represents a side-effect that can raise errors
-
-### [Architecture the Lost Years](https://www.youtube.com/watch?v=WpkDN78P884) [01:06:38] by **Robert C. Martin** (2011)
-
-# Pending Talks
 ## Go
 * [SQLite and Go](https://www.youtube.com/watch?v=RqubKSF3wig) [00:32:02] by **David Crawshaw** (2018)
 * [Things in Go I Never Use](https://www.youtube.com/watch?v=5DVV36uqQ4E) [00:24:52] by **Mat Ryer** (2018)��
@@ -140,6 +72,8 @@ __Use default values__
 ## Security
 * [DNS, SNI, TLS, HTTPS: Modern DNS & Privacy](https://www.youtube.com/watch?v=pjin3nv8jAo) [00:43:17] by **Bert Hubert** (2019)
 ## Software engineering
+* [Architecture the Lost Years](https://www.youtube.com/watch?v=WpkDN78P884) [01:06:38] by **Robert C. Martin** (2011)
+* [Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE) [00:35:52] by **Sandi Metz** (2015)
 * [OOP Is Dead, Long Live Data-oriented Design](https://www.youtube.com/watch?v=yy8jQgmhbAU) [01:00:45] by **Stoyan Nikolov** (2018)
 * [TDD, Where Did It All Go Wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM) [01:03:53] by **Ian Cooper** (2017)
 * [You're Insufficiently Persuasive](https://www.youtube.com/watch?v=VzWLGMtXflg) [00:35:37] by **Sandi Metz** (2017)
