@@ -1,4 +1,10 @@
-# [Confident Code](https://www.youtube.com/watch?v=T8J0j2xJFgQ) [00:31:24] by **Avdi Grimm** (2012)
+# [Confident Code](avdi-grimm/confident-ruby.md) [00:31:24] by **Avdi Grimm** (2012)
+
+
+## What does it teaches ?
+
+He teaches how to get confident code that tell us a story.
+How to protect our code from unexpected input values.
 
 Every method does:
 1-Gather Input
@@ -10,7 +16,7 @@ Every method does:
 
 1-Gather Input
   * Duck typing is treat the object as a duck, assumes that if is not it will complaint
-  * The opposite of dick typing is switch statement smell
+  * The opposite of duck typing is switch statement smell
   * How can my method trust that input objects(or data) allways respond to the interface I need?
 
   If you find yourself doing these __over the input__:
