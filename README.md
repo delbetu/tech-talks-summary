@@ -73,7 +73,7 @@
 * [DNS, SNI, TLS, HTTPS: Modern DNS & Privacy](https://www.youtube.com/watch?v=pjin3nv8jAo) [00:43:17] by **Bert Hubert** (2019)
 ## Software engineering
 * [Architecture the Lost Years](https://www.youtube.com/watch?v=WpkDN78P884) [01:06:38] by **Robert C. Martin** (2011)
-* [Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE) [00:35:52] by **Sandi Metz** (2015)
+* [Nothing is Something](sandi-metz/nothing_is_something.md) [00:35:52] by **Sandi Metz** (2015)
 * [OOP Is Dead, Long Live Data-oriented Design](https://www.youtube.com/watch?v=yy8jQgmhbAU) [01:00:45] by **Stoyan Nikolov** (2018)
 * [TDD, Where Did It All Go Wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM) [01:03:53] by **Ian Cooper** (2017)
 * [You're Insufficiently Persuasive](https://www.youtube.com/watch?v=VzWLGMtXflg) [00:35:37] by **Sandi Metz** (2017)
